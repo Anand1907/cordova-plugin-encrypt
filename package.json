@@ -3,7 +3,7 @@
     "name": "org.apache.cordova.encrypt",
     "cordova_name": "Encrypt",
     "description": "Cordova Encrypt Plugin",
-    "license": "Apache 2.0",
+    "license": "MIT",
     "keywords": [
         "cordova",
         "encrypt"
