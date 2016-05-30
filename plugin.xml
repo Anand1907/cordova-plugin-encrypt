@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.device"
+    version="0.0.1">
+    <name>Encrypt</name>
+    <description>Cordova Encrypt Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,encrypt</keywords>
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-encrypt.git</repo>
+    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+
+    <js-module src="www/encrypt.js" name="encrypt">
+        <clobbers target="encrypt" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Encrypt" >
+                <param name="android-package" value="org.apache.cordova.device.Encrypt"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Encrypt.java" target-dir="src/org/apache/cordova/encrypt" />
+    </platform>
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="ios-package" value="CDVDevice"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVDevice.h" />
+        <source-file src="src/ios/CDVDevice.m" />
+    </platform>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="wp-package" value="Device"/>
+            </feature>
+        </config-file>
+
+        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+        </config-file>
+
+        <source-file src="src/wp/Device.cs" />
+    </platform>
+</plugin>
