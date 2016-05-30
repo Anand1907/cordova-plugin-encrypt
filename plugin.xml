@@ -8,9 +8,10 @@
     version="0.0.1">
     <name>Encrypt</name>
     <description>Cordova Encrypt Plugin</description>
-    <license>MIT</license>
+    <license>Apache 2.0</license>
     <keywords>cordova,encrypt</keywords>
-    <repo>https://github.com/Anand1907/cordova-plugin-encrypt</repo>
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-encrypt.git</repo>
+    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
 
     <js-module src="www/encrypt.js" name="encrypt">
         <clobbers target="encrypt" />
@@ -20,7 +21,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Encrypt" >
-                <param name="android-package" value="org.apache.cordova.device.Encrypt"/>
+                <param name="android-package" value="org.apache.cordova.encrypt.Encrypt"/>
             </feature>
         </config-file>
 
