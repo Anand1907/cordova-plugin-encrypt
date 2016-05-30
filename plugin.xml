@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+    <plugin id="cordova-plugin-encrypt" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:rim="http://www.blackberry.com/ns/widgets"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.apache.cordova.encrypt"
-    version="0.0.1">
     <name>Encrypt</name>
     <description>Cordova Encrypt Plugin</description>
     <license>MIT</license>
