@@ -33,24 +33,13 @@ channel.waitForInitialization('onCordovaInfoReady');
 function Encrypt() {
     this.available = false;
     this.platform = null;
-    this.version = null;
-    this.uuid = null;
-    this.cordova = null;
-    this.model = null;
-
     var me = this;
 
     channel.onCordovaReady.subscribe(function() {
         me.getInfo(function(info) {
-            //ignoring info.cordova returning from native, we should use value from cordova.version defined in cordova.js
-            //TODO: CB-5105 native implementations should not return info.cordova
             var buildLabel = cordova.version;
             me.available = true;
-            me.platform = info.platform;
-            me.version = info.version;
-            me.uuid = info.uuid;
-            me.cordova = buildLabel;
-            me.model = info.model;
+            me.platform = info.getKey;
             channel.onCordovaInfoReady.fire();
         },function(e) {
             me.available = false;
