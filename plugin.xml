@@ -8,7 +8,7 @@
     version="0.0.1">
     <name>Encrypt</name>
     <description>Cordova Encrypt Plugin</description>
-    <license>Apache 2.0</license>
+    <license>MIT</license>
     <keywords>cordova,encrypt</keywords>
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-encrypt.git</repo>
 
