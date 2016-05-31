@@ -1,6 +1,6 @@
 {
     "version": "0.0.1",
-    "name": "org.apache.cordova.encrypt",
+    "name": "cordova-plugin-encrypt",
     "cordova_name": "Encrypt",
     "description": "Cordova Encrypt Plugin",
     "license": "MIT",
@@ -11,6 +11,7 @@
     "platforms": [
        "android",
        "ios",
+        "wp7",
         "wp8"
     ],
     "engines": [],
