@@ -23,7 +23,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="org.apache.cordova.encrypt"
     version="0.0.1">
-    <name>Device</name>
+    <name>Encrypt</name>
     <description>Cordova Encrypt Plugin</description>
     <license>MIT</license>
     <keywords>cordova,device</keywords>
