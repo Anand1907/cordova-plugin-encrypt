@@ -42,7 +42,7 @@ function Encrypt() {
     var me = this;
 
     channel.onCordovaReady.subscribe(function() {
-        me.getData(function(info) {
+        me.getInfo(function(info) {
             //ignoring info.cordova returning from native, we should use value from cordova.version defined in cordova.js
             //TODO: CB-5105 native implementations should not return info.cordova
             me.available = true;
@@ -62,7 +62,7 @@ function Encrypt() {
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
 Encrypt.prototype.getInfo = function(successCallback, errorCallback) {
-    argscheck.checkArgs('fF', 'Encrypt.getData', arguments);
+    argscheck.checkArgs('fF', 'Encrypt.getInfo', arguments);
     exec(successCallback, errorCallback, "Encrypt", "getKeyDetails", []);
 };
 
