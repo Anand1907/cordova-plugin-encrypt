@@ -1,4 +1,4 @@
-cordova.define("org.apache.cordova.encrypt.encrypt", function(require, exports, module) {
+
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -68,4 +68,3 @@ Encrypt.prototype.getInfo = function(successCallback, errorCallback) {
 
 module.exports = new Encrypt();
 
-});
