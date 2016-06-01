@@ -1,5 +1,5 @@
 
-package org.apache.cordova.encrypt;
+package en.ty.encrypt;
 
 import java.util.TimeZone;
 
