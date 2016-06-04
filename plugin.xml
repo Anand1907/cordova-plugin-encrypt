@@ -42,7 +42,7 @@
     </platform>
 
     <!-- windows8 -->
-    <platform name="windows8">
+    <platform name="windows">
         <js-module src="src/windows8/EncryptProxy.js" name="EncryptProxy">
             <merges target="" />
         </js-module>
