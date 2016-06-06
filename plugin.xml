@@ -32,13 +32,13 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="ios-package" value="CDVDevice"/>
+            <feature name="Encrypt">
+                <param name="ios-package" value="CDVEncrypt"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVDevice.h" />
-        <source-file src="src/ios/CDVDevice.m" />
+        <header-file src="src/ios/CDVEncrypt.h" />
+        <source-file src="src/ios/CDVEncrypt.m" />
     </platform>
 
     <!-- windows8 -->
